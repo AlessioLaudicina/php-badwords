@@ -1,7 +1,8 @@
 <?php 
 $stringaA = $_GET['name'];
 $stringaB = $_GET['badword'];
-$lunghezzastringa = strlen($stringa);
-echo $stringa . '  Con una lunghezza complessiva di ' . $lunghezzastringa . '  caratteri';
+$lunghezzastringa = strlen($stringaA);
+$censored = str_replace( $stringaB, '***', $stringaA);
+echo $stringaA . '  Con una lunghezza complessiva di ' . $lunghezzastringa . '  caratteri';
 
 ?>
