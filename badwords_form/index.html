@@ -10,9 +10,14 @@
 
 <body>
     <form action="/badwords_form/badwords.php" method="get">
-        <input type="text" id="name" name="name" placeholder="Scrivi qualcosa">
-        <input type="text" id="name" name="badword" placeholder="Scrivi qualcosa da censurare">
-        <button type="submit">Invia</button>
+        <label for="paragrafo">Scrivi qualcosa</label>
+        <textarea name="paragrafo" id="paragrafo"></textarea>
+        <div>
+            <input type="text" id="badword" name="badword" placeholder="Scrivi qualcosa da censurare">
+            <button type="submit">Invia</button>
+
+        </div>
+
 
 
     </form>
